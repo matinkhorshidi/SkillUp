@@ -1,0 +1,395 @@
+.masters-slider {
+  margin: 50px 0;
+  height: 45rem;
+  background-color: #400568b7;
+  box-shadow: 1px -1px 10px 3px rgba(69, 69, 69, 0.4);
+  display: flex;
+  align-items: flex-end;
+}
+
+.masters-slider > .holder {
+  width: 93%;
+  height: 88%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  color: white;
+}
+
+/* korner pictures */
+.masters-slider > .holder > .pictures {
+  width: 17%;
+  height: 100%;
+}
+.holder > .pictures > .asli {
+  width: 50%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.pictures > .asli > .masters-pic {
+  width: 5rem;
+  height: 5rem;
+  margin: 10% 0 0 10%;
+  overflow: hidden;
+  background-color: #000;
+  cursor: pointer;
+}
+.pictures > .asli > .masters-pic > img {
+  width: 140%;
+  position: relative;
+  left: -20%;
+
+  transition: 0.4s;
+}
+.pictures > .asli > .masters-pic > img:hover {
+  width: 140%;
+  position: relative;
+  left: -20%;
+  opacity: 0.5;
+}
+
+.pictures > .asli > .masters-pic.last {
+  margin-bottom: 10%;
+}
+
+/* main div */
+.masters-slider > .holder > .data {
+  width: 83%;
+  height: 100%;
+
+  display: flex;
+}
+
+/* main pic */
+.holder > .data > .pic {
+  width: 50%;
+  height: 100%;
+
+  position: relative;
+  overflow: hidden;
+  direction: rtl;
+}
+.holder > .data > .pic > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  transition: 0s;
+}
+/* description section */
+.holder > .data > .description {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* upper */
+.data > .description > .person-description {
+  height: 50%;
+  display: flex;
+}
+
+.description > .person-description > .text {
+  width: 85%;
+  height: 100%;
+  direction: rtl;
+}
+
+.person-description > .text > .animHolder1 > h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 3rem;
+
+  transition: 0s;
+}
+.text > .animHolder1 > .profession {
+  position: relative;
+  top: -1%;
+  font-family: tahoma;
+  font-weight: 700;
+  font-style: oblique;
+
+  transition: 0s;
+}
+.text > .animHolder2 > .pHolder > p {
+  color: rgba(250, 250, 250, 0.8);
+  margin: 0;
+
+  transition: 0s;
+}
+
+.text > .animHolder3 > .logos {
+  display: flex;
+
+  transition: 0s;
+}
+.text > .animHolder3 > .logos > div {
+  width: 14%;
+  height: 14%;
+  margin-left: 11%;
+  /* fill: rgba(250, 250, 250, 0.6); */
+  fill: #fff;
+
+  cursor: pointer;
+  border-radius: 4px;
+}
+.text > .animHolder3 > .logos > div:hover {
+  fill: rgb(218, 8, 218);
+}
+
+/* right array number */
+.description > .person-description > .number {
+  width: 15%;
+  height: 100%;
+
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: tahoma;
+
+  position: relative;
+}
+.description > .person-description > .number > span {
+  position: absolute;
+  top: 13%;
+  right: -31%;
+
+  transform: rotate(-90deg);
+  transition: 0s;
+}
+.description > .person-description > .number > span.goDown {
+  top: 20%;
+  opacity: 0;
+}
+.description > .person-description > .number > span.goUp {
+  top: 13%;
+  opacity: 1;
+  transition: 1s;
+}
+
+/* quote  */
+.data > .description > .quote {
+  height: 50%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  /* color: #092742; */
+  color: #470572;
+  font-weight: bold;
+
+  position: relative;
+  transition: 0;
+}
+.data > .description > .quote.goDown {
+  bottom: -50%;
+}
+.data > .description > .quote.goUp {
+  bottom: 0%;
+  transition: 0.7s;
+}
+.description > .quote > .mainQuote {
+  display: flex;
+  align-items: center;
+  direction: rtl;
+  width: 85%;
+  height: 100%;
+}
+.description > .quote > .mainQuote > div {
+  width: 90%;
+  font-family: tahoma;
+  font-weight: 800;
+}
+
+.description > .quote > .nextIcon {
+  width: 12%;
+  height: 20%;
+  /* background-color: #0f426e; */
+  background-color: #7209b7;
+  align-self: flex-end;
+  cursor: pointer;
+
+  position: relative;
+  transition: 0s;
+}
+.description > .quote > .nextIcon:hover {
+  background-color: #8f09e9;
+}
+.description > .quote > .nextIcon.goDown {
+  bottom: -100%;
+}
+.description > .quote > .nextIcon.goUp {
+  bottom: 0%;
+  transition: 0.7s;
+}
+.description > .quote > .nextIcon > svg {
+  fill: white;
+}
+/* =============================================================== */
+/* Animation */
+.opacity0-5 {
+  opacity: 0.5;
+}
+
+.hidden {
+  opacity: 0;
+  transition: 1s;
+}
+
+.animHolder1,
+.animHolder2,
+.animHolder3 {
+  width: 90%;
+  height: auto;
+  overflow: hidden;
+  margin-bottom: 4%;
+
+  direction: rtl;
+  position: relative;
+}
+.animHolder3.logos {
+  width: 35%;
+}
+
+.cover {
+  width: 0%;
+  height: 100%;
+  /*background-color: #0f426e; */
+  background-color: #7209b7;
+  position: absolute;
+  top: 0;
+  transition: 0s;
+}
+.cover.rendered1 {
+  width: 100%;
+  transition: 0.5s;
+}
+.cover.rendered2 {
+  width: 100%;
+  animation: rendered2 0.4s;
+  left: -100%;
+}
+
+@keyframes rendered2 {
+  from {
+    left: 0;
+  }
+  to {
+    left: -100%;
+  }
+}
+/* ============================================ Responsive */
+@media screen and (max-width: 1200px) {
+  .text > .animHolder2 > .pHolder > p,
+  .description > .quote > .mainQuote > div {
+    font-size: 0.9rem;
+  }
+  .description > .quote > .nextIcon {
+    height: 16%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .masters-slider {
+    padding-top: 2%;
+  }
+  .masters-slider > .holder {
+    height: 100%;
+    width: 100%;
+  }
+  .masters-slider > .holder > .pictures {
+    width: auto;
+    margin-right: 0.8%;
+  }
+  .masters-slider > .holder > .data {
+    display: block;
+    width: 100%;
+  }
+  .holder > .data > .pic {
+    height: 55%;
+    width: 40%;
+    margin: 0 auto;
+  }
+  .holder > .data > .description {
+    height: 45%;
+    width: 100%;
+  }
+  .data > .description > .person-description {
+    height: 80%;
+    padding: 0 0 0 4%;
+  }
+  .text > .animHolder3 > .logos > div {
+    width: 10%;
+    height: 10%;
+    margin-left: 9%;
+  }
+  .description > .person-description > .number > span {
+    right: 0;
+    font-weight: 500;
+  }
+  .description > .person-description > .number > span.goDown {
+    top: 50%;
+  }
+  .description > .person-description > .number > span.goUp {
+    top: 30%;
+  }
+  .data > .description > .quote {
+    height: 25%;
+    justify-content: flex-end;
+  }
+  .data > .description > .quote.goUp {
+    bottom: -0%;
+  }
+  .description > .quote > .mainQuote {
+    display: none;
+  }
+  .description > .quote > .nextIcon {
+    width: 50px;
+    height: 50px;
+    align-self: unset;
+    margin: 10px 20px 0 0;
+  }
+  .animHolder1,
+  .animHolder2,
+  .animHolder3 {
+    width: 100%;
+    margin-bottom: 3.5%;
+    margin-top: 2%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .masters-slider {
+    height: 35rem;
+  }
+  .masters-slider > .holder > .pictures,
+  .description > .person-description > .number,
+  .text > .animHolder2 {
+    display: none;
+  }
+  .holder > .data > .pic {
+    width: 249px;
+  }
+  .description > .person-description > .text {
+    width: 100%;
+    padding-right: 20px;
+  }
+  .person-description > .text > .animHolder1 > h1 {
+    font-size: 2.5rem;
+  }
+  .text > .animHolder1 > .profession {
+    font-size: 0.9rem;
+  }
+  .text > .animHolder3 > .logos > div {
+    width: 23px;
+    height: 23px;
+    margin-left: 9%;
+  }
+
+  .data > .description > .quote {
+    height: 40%;
+  }
+  .data > .description > .quote.goUp {
+    bottom: 10%;
+  }
+}

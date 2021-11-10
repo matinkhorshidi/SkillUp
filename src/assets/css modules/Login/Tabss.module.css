@@ -1,0 +1,27 @@
+.holder {
+  background-color: #fff;
+  box-shadow: 1px -1px 10px 3px rgba(69, 69, 69, 0.4);
+  position: relative;
+  padding-top: 10px;
+}
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+.tab {
+  font-family: iran-yekan !important;
+}
+.close {
+  cursor: pointer;
+}
+.fill {
+  stroke: red;
+  stroke-width: 2px;
+  width: 13px;
+  position: absolute;
+  left: 1%;
+  top: 10%;
+  transition: 0s;
+  cursor: pointer;
+  margin: 6px;
+}

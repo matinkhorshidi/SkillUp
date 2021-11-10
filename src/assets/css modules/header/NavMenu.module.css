@@ -1,0 +1,41 @@
+.mainNav {
+  list-style: none;
+  padding-top: 10px;
+  font-size: 1.1rem;
+}
+
+.mainNav li {
+  display: inline-block;
+  margin-right: 3rem;
+}
+
+.mainNav a {
+  text-decoration: none;
+  display: inline-block;
+  margin: 0;
+  cursor: pointer;
+  color: black;
+}
+
+.Link:hover {
+  color: rgb(181, 23, 158) !important;
+}
+
+/* .Link:active {
+  color: rgb(181, 23, 158) !important;
+} */
+
+.mainNav a:after {
+  padding: 5px 10px;
+  color: rgb(181, 23, 158) !important;
+
+  display: block;
+  content: '';
+  border-bottom: solid 3px rgb(181, 23, 158);
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+
+.mainNav a:hover:after {
+  transform: scaleX(1);
+}

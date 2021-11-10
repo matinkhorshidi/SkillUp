@@ -1,0 +1,115 @@
+.container {
+  position: absolute;
+
+  width: 85%;
+  right: 50%;
+  transform: translateX(50%);
+}
+.title {
+  text-align: center;
+  margin-top: 4%;
+}
+.main {
+  padding-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+.right,
+.left {
+  width: 45%;
+}
+.rememberForget {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.7rem;
+  margin-right: 2%;
+}
+.remember {
+  width: 50%;
+}
+.remember > span {
+  margin-left: 9%;
+  position: relative;
+  right: 4%;
+}
+.remember > label {
+  margin-left: 9%;
+  position: relative;
+  right: 4%;
+}
+.remember > input {
+  position: relative;
+  top: 7%;
+}
+.forgetPass:hover {
+  color: #7209b7;
+  cursor: pointer;
+  scale: 1.05;
+  transition: 0.5s;
+}
+
+.loginIllustrator {
+  position: relative;
+  top: -20%;
+}
+.buttons {
+  width: 100%;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  direction: ltr;
+}
+.google {
+  height: 3rem;
+  display: flex;
+  width: 45%;
+  color: #fff;
+  background-color: #474747;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: -24%;
+  cursor: pointer;
+}
+.google > span {
+  margin-left: 2%;
+}
+.enter {
+  width: 45%;
+}
+/* ================================================== register section */
+.passAndForgetPass {
+  display: flex;
+  justify-content: space-between;
+}
+.remember1 {
+  width: 100%;
+}
+.remember1 > span {
+  margin-left: 4.5%;
+  position: relative;
+  top: -15%;
+  right: 2%;
+}
+.buttonsForRegister {
+  width: 100%;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  direction: ltr;
+  margin-top: 3%;
+}
+/* ================================================== forgetPass section */
+
+.forgetContainer {
+  margin-top: 6%;
+}
+/* ================================================== globally used */
+.opacity0 {
+  display: none;
+}
+.opacity1 {
+  display: block;
+}

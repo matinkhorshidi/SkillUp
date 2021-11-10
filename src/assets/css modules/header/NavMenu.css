@@ -1,0 +1,12 @@
+.active {
+  color: rgb(181, 23, 158) !important;
+}
+.active:after {
+  padding: 5px 10px;
+  color: rgb(181, 23, 158) !important;
+
+  display: block;
+  content: '';
+  border-bottom: solid 3px rgb(181, 23, 158);
+  transform: scaleX(1) !important;
+}

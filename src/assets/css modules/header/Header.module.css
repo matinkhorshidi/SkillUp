@@ -1,0 +1,12 @@
+.maincontainer {
+  position: sticky;
+  z-index: 99;
+  top: 0;
+  background-color: #f1f1f1;
+  height: 5rem;
+  color: black;
+  font-size: 0.9rem;
+  box-shadow: 1px -1px 10px 3px rgba(69, 69, 69, 0.4);
+  -webkit-box-shadow: 1px -1px 10px 3px rgba(69, 69, 69, 0.4);
+  -moz-box-shadow: 1px -1px 10px 3px rgba(69, 69, 69, 0.4);
+}

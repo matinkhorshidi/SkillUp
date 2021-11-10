@@ -1,0 +1,20 @@
+.course_image {
+  border-radius: 5px 5px 0px 0px;
+}
+.Box {
+  padding-right: 0px !important;
+  color: #000;
+  position: sticky;
+  top: 101px;
+  border-radius: 5px;
+}
+
+.hr {
+  margin: 10px 25px;
+}
+
+h5 {
+  letter-spacing: -1px;
+  color: black;
+  /* font-weight: bold !important; */
+}

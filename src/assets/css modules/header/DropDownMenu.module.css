@@ -1,0 +1,17 @@
+.Container {
+  text-align: center;
+}
+.Menu {
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.Drawer {
+  text-align: center;
+  font-family: 'iran-yekan' !important;
+  color: black !important;
+  text-decoration: none;
+}
+.Drawer:hover {
+  color: rgb(181, 23, 158) !important;
+}

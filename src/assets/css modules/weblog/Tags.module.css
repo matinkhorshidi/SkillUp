@@ -1,0 +1,6 @@
+.tag {
+  text-align: center;
+  padding: '5px 10px';
+  background-color: rgb(192, 57, 43, 0.8);
+  width: 4rem;
+}

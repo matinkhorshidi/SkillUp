@@ -1,0 +1,27 @@
+.footer {
+  /* background: url('../image/Footer.jpg') repeat-x scroll top transparent; */
+  background: url('../image/Footer6.jpg.jpg');
+  background-size: cover;
+  background-position: center center;
+  height: auto;
+  width: 100%;
+  overflow: hidden;
+  color: white;
+}
+
+.hr {
+  color: white;
+  background-color: white;
+  height: 1;
+  opacity: 0.9;
+  border: 1.5px solid white;
+  margin-top: 30px;
+}
+
+.mnuHead {
+  text-align: center !important;
+  font-size: 1.2rem;
+}
+.footerfont {
+  text-align: center !important;
+}

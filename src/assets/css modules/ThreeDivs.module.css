@@ -1,0 +1,80 @@
+.threeDivs {
+  height: 16%;
+  width: 1170px;
+  max-width: 100%;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+
+  position: absolute;
+  bottom: 10%;
+  right: 50%;
+  transform: translateX(50%);
+  cursor: pointer;
+}
+.items {
+  width: 25%;
+  background-color: rgb(205, 205, 205, 0.7);
+  border-radius: 7px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.items:hover {
+  background-color: rgb(205, 205, 205);
+}
+.items:nth-child(2) {
+  margin: 0 3%;
+}
+.container {
+  width: 80%;
+  height: 60%;
+  display: flex;
+}
+.sectionBox {
+  width: 80%;
+  height: 100%;
+  color: #000;
+
+  direction: rtl;
+}
+.span1 {
+  font-size: 2rem;
+  display: block;
+  font-weight: bold;
+}
+.span2 {
+  cursor: pointer;
+  transition: 0.5s;
+  position: relative;
+  left: -3px;
+}
+.span2:hover {
+  left: -8px;
+}
+
+.span2 > span {
+  font-family: tahoma;
+  font-weight: 900;
+}
+.icon {
+  direction: rtl;
+  width: 45%;
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  padding-left: 18px;
+  transition: 0.4s;
+  /* margin: 0 3%; */
+}
+.icon > img {
+  width: 70%;
+  height: 70%;
+  transition: 0.5s;
+  cursor: pointer;
+  object-fit: fill;
+}
+.icon:hover {
+  scale: 1.1;
+}

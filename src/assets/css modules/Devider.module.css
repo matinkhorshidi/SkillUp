@@ -1,0 +1,22 @@
+.line {
+  align-items: center;
+  justify-content: center;
+}
+
+.hr {
+  color: #7209b7;
+  background-color: 7209b7;
+  height: 1;
+  opacity: 0.7;
+  border: 1.5px solid #7209b7;
+  margin-top: 30px;
+  margin: 20px 40px;
+  z-index: -1;
+  /* position: relative; */
+}
+
+.name {
+  text-align: center;
+  color: #7209b7;
+  font-size: 2rem;
+}
