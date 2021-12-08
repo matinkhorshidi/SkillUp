@@ -1,9 +1,14 @@
-import axios from "axios";
-import { getItem } from "../storage/storage";
+import axios from 'axios';
+import { getItem } from '../storage/storage';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 axios.interceptors.response.use(
   (response) => {
-    console.log("با موفقیت انجام شد");
+    console.log('با موفقیت انجام شد');
+    // toast.success('با موفقیت انجام شد', {
+    //   position: 'top-right',
+    // });
     return response;
   },
   async (error) => {
@@ -20,6 +25,9 @@ axios.interceptors.response.use(
         // get error message from backend (see object of response later... maybe its changed)
         try {
           console.log(error.response.data.message[0].message);
+          toast.error(error.response.data.message[0].message, {
+            position: 'top-right',
+          });
         } catch (error) {}
       }
     } catch (error) {}
@@ -29,7 +37,7 @@ axios.interceptors.response.use(
 
 // will send token to headers request ( in x-auth-token body )
 axios.interceptors.request.use((config) => {
-  config.headers["x-auth-token"] = getItem("token");
+  config.headers['x-auth-token'] = getItem('token');
   return config;
 });
 

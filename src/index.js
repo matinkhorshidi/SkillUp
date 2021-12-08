@@ -5,12 +5,20 @@ import 'bootstrap/dist/css/bootstrap.css';
 import reportWebVitals from './reportWebVitals';
 import './index.css';
 import { BrowserRouter } from 'react-router-dom';
+import { createTheme, ThemeProvider } from '@material-ui/core';
 
+const theme = createTheme({
+  typography: {
+    fontFamily: 'iran-yekan',
+  },
+});
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
+    <ThemeProvider theme={theme}>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </ThemeProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -1,6 +1,7 @@
 import React from 'react';
 
 import CSS from '../../assets/css modules/header/LogedInButton.module.css';
+import { Link } from 'react-router-dom';
 
 class LogedInButton extends React.Component {
   state = {
@@ -113,12 +114,12 @@ class LogedInButton extends React.Component {
         {text}
         <div style={dropdown}>
           <hr style={{ margin: '0.5rem 0' }} />
-          <a className={CSS.link} style={dropdownA} href="#">
+          <Link className={CSS.link} style={dropdownA} to="/Dashboard">
             داشبورد
-          </a>
-          <a className={CSS.link} style={dropdownA} href="#">
+          </Link>
+          <Link className={CSS.link} style={dropdownA} to="/Dashboard">
             سبد خرید
-          </a>
+          </Link>
           <a
             onClick={this.props.onExitClicked}
             className={CSS.link}

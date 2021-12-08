@@ -1,21 +1,21 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
-import { Grid } from '@mui/material';
+import { Grid } from "@mui/material";
 
-import c from '../../assets/css modules/Login/Login.module.css';
+import c from "../../assets/css modules/Login/Login.module.css";
 
-import Input from './Input';
-import Button from '../common/ButtonLEO';
-import SvgIcon from '../common/SvgIcon';
+import Input from "./Input";
+import Button from "../common/ButtonLEO";
+import SvgIcon from "../common/SvgIcon";
 
-import { ReactComponent as Person } from '../../assets/images/Person.svg';
-import { ReactComponent as ForgetPassword } from '../../assets/images/ForgetPassword.svg';
+import { ReactComponent as Person } from "../../assets/images/Person.svg";
+import { ReactComponent as ForgetPassword } from "../../assets/images/ForgetPassword.svg";
 
 class ForgetPass extends Component {
   render() {
     var AniMatestyle = {
-      animation: 'shake 10s',
-      animationIterationCount: 'infinite',
+      animation: "shake 10s",
+      animationIterationCount: "infinite",
     };
     return (
       <div
@@ -84,7 +84,7 @@ class ForgetPass extends Component {
                   cursor="default"
                 />
               </Grid>
-              <Grid item sx={{ mt: '18%', color: '#fff' }}>
+              <Grid item sx={{ mt: "18%", color: "#fff" }}>
                 <Button
                   text="تایید"
                   bgColor="#4BB543"
@@ -95,25 +95,6 @@ class ForgetPass extends Component {
             </Grid>
           </Grid>
         </Grid>
-        {/*         <div className={c.forgetInput}>
-          <Input
-            label="ایمیل یا نام کاربری"
-            placeHolder="ایمیل / نام کاربری"
-            type="text"
-            Icon={Person}
-            iconColor="#B5179E"
-            cursor="default"
-          />
-        </div>
-
-        <div className={c.forgetButton}>
-          <Button
-            text="تایید"
-            bgColor="#4BB543"
-            border="none"
-            bgOver="rgb(181, 23, 158)"
-          />
-        </div> */}
       </div>
     );
   }

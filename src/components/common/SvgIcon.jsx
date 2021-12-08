@@ -10,7 +10,7 @@ class SvgIcon extends React.Component {
   };
 
   render() {
-    const { Icon, size, bgColor, bgOver, cursor, onClick, mystyle } =
+    const { Icon, size, bgColor, bgOver, cursor, onClick, mystyle, svgstyle } =
       this.props;
 
     var linkStyle = {};
@@ -39,6 +39,7 @@ class SvgIcon extends React.Component {
         height: size,
         width: size,
         stroke: bgColor,
+        ...svgstyle,
       };
     }
 

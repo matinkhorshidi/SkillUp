@@ -14,6 +14,7 @@ import BlogImage6 from '../../assets/image/BlogImage6.webp';
 import BlogImage7 from '../../assets/image/BlogImage7.jfif';
 import BlogImage8 from '../../assets/image/BlogImage8.jpg';
 import BlogImage9 from '../../assets/image/BlogImage9.jpg';
+import MoreButton from './../common/MoreButton';
 
 class Blogs extends React.Component {
   render() {
@@ -152,17 +153,20 @@ class Blogs extends React.Component {
         </Grid>
         <div
           style={{
-            margin: '2rem auto',
+            margin: '3rem auto',
           }}
         >
-          <ReadMoreButton
+          {/* <ReadMoreButton
             text={'نمایش بیشتر'}
+            txtColor={'#FFFFFF'}
             bgColor={'rgb(211, 172, 237)'}
             txtColor={'#3A0CA3'}
             bgOver={'rgb(190, 150, 200)'}
             fontSize={'1rem'}
             // fontOver={'0.9rem'}
-          />
+          /> */}
+          <MoreButton />
+          {/* <MoreButton2 /> */}
         </div>
       </Container>
     );

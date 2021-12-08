@@ -13,18 +13,29 @@ class ButtonLEO extends Component {
   };
 
   render() {
-    const { text, bgColor, border, margin, onClick } = this.props;
+    const {
+      text,
+      bgColor,
+      border,
+      margin,
+      onClick,
+      textColor,
+      padd,
+      lineHeight,
+      fontSize,
+      height,
+    } = this.props;
 
     const style = {
       backgroundColor: bgColor,
       border: border,
-
+      color: textColor,
       margin: margin || 'none',
-      height: '3rem',
-      padding: '0rem 1.6rem',
-      lineHeight: '2.7rem',
+      height: height || '3rem',
+      padding: padd || '0rem 1.6rem',
+      lineHeight: lineHeight || '2.7rem',
       borderRadius: '4px',
-      fontSize: '1rem',
+      fontSize: fontSize || '1rem',
       cursor: 'pointer',
       textAlign: 'center',
 

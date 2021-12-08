@@ -11,7 +11,7 @@ function NavMenu() {
     <React.Fragment>
       <ul className={CSS.mainNav}>
         <li>
-          <NavLink className={CSS.Link} to="/Blog" activeClassName="active">
+          <NavLink className={CSS.Link} to="/AboutUs" activeClassName="active">
             درباره ما
           </NavLink>
         </li>
@@ -21,7 +21,7 @@ function NavMenu() {
           </NavLink>
         </li>
         <li>
-          <NavLink className={CSS.Link} to="/Course" activeClassName="active">
+          <NavLink className={CSS.Link} to="/Courses" activeClassName="active">
             آموزش
           </NavLink>
         </li>

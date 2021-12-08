@@ -1,19 +1,21 @@
 .threeDivs {
-  height: 16%;
-  width: 1170px;
-  max-width: 100%;
+  max-width: 80%;
+  width: 80%;
   z-index: 1;
-  display: flex;
   justify-content: center;
-
+  display: block;
   position: absolute;
   bottom: 10%;
-  right: 50%;
+  right: 45%;
+  text-align: center;
+  justify-self: center;
+  justify-content: center;
   transform: translateX(50%);
   cursor: pointer;
 }
 .items {
-  width: 25%;
+  width: 300px;
+  height: 140px;
   background-color: rgb(205, 205, 205, 0.7);
   border-radius: 7px;
 
@@ -25,7 +27,7 @@
   background-color: rgb(205, 205, 205);
 }
 .items:nth-child(2) {
-  margin: 0 3%;
+  margin: 0 2%;
 }
 .container {
   width: 80%;
@@ -64,7 +66,7 @@
   display: flex;
   align-items: center;
   padding-top: 10px;
-  padding-left: 18px;
+  /* padding-left: 10px; */
   transition: 0.4s;
   /* margin: 0 3%; */
 }
@@ -77,4 +79,79 @@
 }
 .icon:hover {
   scale: 1.1;
+}
+
+@media (min-width: 220px) {
+  .threeDivs {
+    max-width: 80%;
+    width: 80%;
+    z-index: 1;
+    justify-content: center;
+    display: block;
+    position: absolute;
+    bottom: 0%;
+    right: 30%;
+    text-align: center;
+    justify-self: center;
+    justify-content: center;
+    transform: translateX(50%);
+    cursor: pointer;
+    margin-top: 400px;
+  }
+}
+@media (min-width: 600px) {
+  .threeDivs {
+    max-width: 80%;
+    width: 80%;
+    z-index: 1;
+    justify-content: center;
+    display: block;
+    position: absolute;
+    bottom: 0%;
+    right: 25%;
+    text-align: center;
+    justify-self: center;
+    justify-content: center;
+    transform: translateX(50%);
+    cursor: pointer;
+    margin-top: 400px;
+  }
+}
+@media (min-width: 883px) {
+  .threeDivs {
+    max-width: 80%;
+    width: 80%;
+    z-index: 1;
+    justify-content: center;
+    display: block;
+    position: absolute;
+    bottom: 10%;
+    right: 50%;
+    text-align: center;
+    justify-self: center;
+    justify-content: center;
+    transform: translateX(50%);
+    cursor: pointer;
+    margin-top: 400px;
+  }
+}
+@media (min-width: 1025px) {
+  /* big landscape tablets, laptops, and desktops */
+}
+@media (min-width: 1281px) {
+  .threeDivs {
+    max-width: 80%;
+    width: 80%;
+    z-index: 1;
+    justify-content: center;
+    display: block;
+    position: absolute;
+    bottom: 10%;
+    right: 45%;
+    text-align: center;
+    justify-self: center;
+    justify-content: center;
+    transform: translateX(50%);
+    cursor: pointer;
+  }
 }

@@ -9,6 +9,7 @@ import RelatedContentBox from '../common/RelatedContentBox';
 import BlogImage from '../../assets/image/BlogImage.jpg';
 import WriterImage from '../../assets/image/WriterImage.jpg';
 import Tags from './../common/Tags';
+import Comments from './../common/Commenting/Comments';
 
 class BlogContainer extends React.Component {
   scrollToComment = () => {
@@ -64,6 +65,11 @@ class BlogContainer extends React.Component {
             <Comment
               name={'دیدگاهتان را بنویسید'}
               backgrColor={'#D1D1D1'}
+              textColor={'#212529'}
+            />
+            <Comments
+              name={'دیدگاه های شما'}
+              backgrColor={'#FFFFFF'}
               textColor={'#212529'}
             />
           </Grid>

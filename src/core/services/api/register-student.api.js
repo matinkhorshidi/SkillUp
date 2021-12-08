@@ -3,8 +3,7 @@ import Http from '../interceptor/interceptor';
 import { LoginUser } from './login-student.api';
 
 // main url of backend
-// const MainUrl = process.env.PUBLIC_API;
-const MainUrl = 'https://academy-4-man-army.herokuapp.com/';
+const MainUrl = process.env.REACT_APP_API_URL;
 
 const RegisterUser = async (obj) => {
   try {

@@ -78,34 +78,34 @@ class MastersSlider extends Component {
   animation = () => {
     setTimeout(() => {
       this.setState({ mainPicCoverAnimation1: true });
-    }, 15);
+    }, 10);
     setTimeout(() => {
       this.setState({ h1SpanCoverAnimation1: true });
-    }, 150);
+    }, 100);
     setTimeout(() => {
       this.setState({ pCoverAnimation1: true });
-    }, 300);
+    }, 200);
     setTimeout(() => {
       this.setState({ logosCoverAnimation1: true });
-    }, 450);
+    }, 300);
     setTimeout(() => {
       this.setState({ mainPicCoverAnimation2: true });
-    }, 1010);
+    }, 680);
     setTimeout(() => {
       this.setState({ h1SpanCoverAnimation2: true });
-    }, 1100);
+    }, 1000);
     setTimeout(() => {
       this.setState({ pCoverAnimation2: true });
-    }, 1200);
+    }, 1100);
     setTimeout(() => {
       this.setState({ logosCoverAnimation2: true });
-    }, 1300);
+    }, 1200);
     setTimeout(() => {
       this.setState({ quoteAnimation2: true, quoteAnimation1: false });
-    }, 1400);
+    }, 1300);
     setTimeout(() => {
       this.setState({ nextIconAnimation2: true, nextIconAnimation1: false });
-    }, 1700);
+    }, 1600);
   };
 
   handleNext = () => {

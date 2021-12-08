@@ -10,10 +10,23 @@ import BlogImage6 from '../../assets/image/BlogImage6.webp';
 import BlogImage7 from '../../assets/image/BlogImage7.jfif';
 import BlogImage8 from '../../assets/image/BlogImage8.jpg';
 import BlogImage9 from '../../assets/image/BlogImage9.jpg';
+import { setNews } from '../../core/services/api/news/set-news.api';
+import { getNews } from '../../core/services/api/news/get-news.api';
 // import { ReactComponent as Instagram } from '../../assets/image/Icons/social/instagram.svg';
 // import SvgIcon from './common/SvgIcon';
-
+const news1 = {
+  title: 'آموزش کار با گوگل کنسول ابتدایی',
+  category: 'article',
+  image: '../../assets/image/BlogImage4.jpg',
+  text: 'مداد رنگی ها مشغول بودند به جز مداد سفید، هیچکس به او کار نمیداد، همه میگفتند : تو به هیچ دردی نمیخوری، یک شب که مداد مداد رنگی ها مشغول بودند به جز مداد سفید، هیچکس به او کار نمیداد، همه میگفتند :',
+};
 class BlogsLanding extends React.Component {
+  componentDidMount() {
+    // setCourse(course2);
+    // setNews(news1);
+    // deleteCourse('61968c77ba48f80023712dd7');
+    getNews();
+  }
   render() {
     return (
       <Container id="blog" maxWidth="lg">
@@ -29,8 +42,6 @@ class BlogsLanding extends React.Component {
               readTime={'دو دقیقه'}
               date={'دو ماه پیش'}
               masterName={'دکتر جزایری'}
-              tag={'تولید محتوی و سئو'}
-              TagColor={'#8FD01D'}
             />
           </Grid>
           <Grid item xs={12} sm={6} md={4} lg={4}>
@@ -43,8 +54,6 @@ class BlogsLanding extends React.Component {
               readTime={'دو دقیقه'}
               date={'دو ماه پیش'}
               masterName={'دکتر جزایری'}
-              tag={'فرانت دولوپرز'}
-              TagColor={'#4895EF'}
             />
           </Grid>
           <Grid item xs={12} sm={6} md={4} lg={4}>
@@ -57,8 +66,6 @@ class BlogsLanding extends React.Component {
               readTime={'دو دقیقه'}
               date={'دو ماه پیش'}
               masterName={'دکتر جزایری'}
-              tag={'طراحی و یو آی'}
-              TagColor={'#DA3033'}
             />
           </Grid>
           <Grid item xs={12} sm={6} md={4} lg={4}>
@@ -71,8 +78,6 @@ class BlogsLanding extends React.Component {
               readTime={'دو دقیقه'}
               date={'دو ماه پیش'}
               masterName={'دکتر جزایری'}
-              tag={'برنامه نویسی'}
-              TagColor={'#FF9C1D'}
             />
           </Grid>
           <Grid item xs={12} sm={6} md={4} lg={4}>
@@ -85,8 +90,6 @@ class BlogsLanding extends React.Component {
               readTime={'دو دقیقه'}
               date={'دو ماه پیش'}
               masterName={'دکتر جزایری'}
-              tag={'تولید محتوی و سئو'}
-              TagColor={'#8FD01D'}
             />
           </Grid>
           <Grid item xs={12} sm={6} md={4} lg={4}>
@@ -99,12 +102,9 @@ class BlogsLanding extends React.Component {
               readTime={'دو دقیقه'}
               date={'دو ماه پیش'}
               masterName={'دکتر جزایری'}
-              tag={'تولید محتوی و سئو'}
-              TagColor={'#8FD01D'}
             />
           </Grid>
         </Grid>
-        {/* <SvgIcon Icon={Instagram} width="0.1px" height="0.1px"></SvgIcon> */}
       </Container>
     );
   }

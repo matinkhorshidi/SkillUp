@@ -108,10 +108,7 @@
 .text > .animHolder1 > .profession {
   position: relative;
   top: -1%;
-  font-family: tahoma;
   font-weight: 700;
-  font-style: oblique;
-
   transition: 0s;
 }
 .text > .animHolder2 > .pHolder > p {
@@ -147,7 +144,6 @@
 
   font-size: 2rem;
   font-weight: 600;
-  font-family: tahoma;
 
   position: relative;
 }
@@ -198,7 +194,6 @@
 }
 .description > .quote > .mainQuote > div {
   width: 90%;
-  font-family: tahoma;
   font-weight: 800;
 }
 

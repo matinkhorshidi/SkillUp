@@ -5,6 +5,7 @@ import Button from '../common/ButtonLEO';
 import SvgIcon from '../common/SvgIcon';
 
 import { ReactComponent as Person } from '../../assets/images/Person.svg';
+import { ReactComponent as idcart } from '../../assets/images/idcart.svg';
 import { ReactComponent as Key } from '../../assets/images/Key.svg';
 import { ReactComponent as GoogleColorfull } from '../../assets/images/GoogleColorfull.svg';
 import { ReactComponent as Mail } from '../../assets/images/Mail.svg';
@@ -19,13 +20,12 @@ class Register extends React.Component {
   state = {
     user: {
       fullName: '',
-      phoneNumber: '09222222222',
-      email: 'khorshidimaatinnn@gmail.com',
-      birthDate: '1378/01/26',
-      nationalId: '2053091966',
-      password: '2053091966',
+      phoneNumber: '',
+      email: '',
+      birthDate: '',
+      nationalId: '',
+      password: '',
     },
-    userLogedIn: false,
   };
   handleUsernameChange = (e) => {
     const user = { ...this.state.user };
@@ -49,13 +49,11 @@ class Register extends React.Component {
   };
 
   render() {
-    const logedin = getItem('token');
-
     const onRegisterUser = async () => {
       const RegisteredUser = await RegisterUser(this.state.user);
-      console.log('RegisteredUser');
-      console.log(this.state.user);
+
       if (RegisteredUser) {
+        this.props.handleToast('registered');
         const user = {
           email: this.state.user.email,
           password: this.state.user.password,
@@ -70,8 +68,7 @@ class Register extends React.Component {
         }
 
         this.props.handlePopup();
-      } else alert('Wrong information');
-      console.log(logedin);
+      } else this.props.handleToast('warningreg');
     };
     var AniMatestyle = {
       animation: 'shake 10s',
@@ -104,8 +101,8 @@ class Register extends React.Component {
           <div className={c.main}>
             <div className={c.right}>
               <Input
-                label="نام کاربری"
-                placeHolder="نام کاربری"
+                label="نام و نام خانوادگی"
+                placeHolder="آلبرت انیشتین"
                 type="text"
                 Icon={Person}
                 iconColor="#B5179E"
@@ -115,7 +112,7 @@ class Register extends React.Component {
               />
               <Input
                 label="ایمیل"
-                placeHolder="ایمیل"
+                placeHolder="example@Email.com"
                 type="text"
                 Icon={Mail}
                 iconColor="#B5179E"
@@ -144,7 +141,7 @@ class Register extends React.Component {
               label="کد ملی"
               placeHolder="کد ملی"
               type="text"
-              Icon={Key}
+              Icon={idcart}
               iconColor="#B5179E"
               cursor="default"
               value={this.state.user.nationalId}
@@ -159,8 +156,8 @@ class Register extends React.Component {
           </div>
           <div className={c.left}>
             <Input
-              label="تکرار رمز عبور"
-              placeHolder="تکرار رمز عبور"
+              label=" رمز عبور"
+              placeHolder="بزرگتر از 8 کاراکتر"
               type="password"
               Icon={Key}
               iconColor="#B5179E"

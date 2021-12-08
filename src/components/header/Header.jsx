@@ -1,8 +1,11 @@
 import React from 'react';
 import { Grid } from '@mui/material';
 import { useTheme, useMediaQuery } from '@material-ui/core';
+import { useHistory } from 'react-router';
 
 import CSS from '../../assets/css modules/header/Header.module.css';
+import Logo from '../../assets/image/Skill-logo.png';
+// import Logo from '../../assets/image/Skill-logo-black.png';
 
 import NavMenu from './NavMenu';
 import LogedInButton from './LogedInButton';
@@ -10,13 +13,17 @@ import DropDownMenu from './DropDownMenu';
 import LoginButton from './LoginButton';
 
 import { clearStorage, getItem } from '../../core/services/storage/storage';
+import Image from './../common/Image';
 
 const Header = (props) => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('md'));
   const logedin = getItem('token');
   const User = JSON.parse(getItem('user'));
+
+  const history = useHistory();
   const onExitClicked = () => {
+    history.push('/');
     clearStorage();
     window.location.reload();
   };
@@ -124,7 +131,13 @@ const Header = (props) => {
           textAlign={'center'}
           justifyItems={'center'}
         >
-          <h3 style={{ color: '#7209B7', fontWeight: 'bold' }}>اسکیل آپ</h3>
+          <Image
+            className={CSS.course_image}
+            mode={'contain'}
+            src={Logo}
+            height={'80px'}
+            width={'100%'}
+          />
         </Grid>
       </Grid>
     </Grid>

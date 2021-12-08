@@ -3,12 +3,21 @@ import React from 'react';
 import { Container, FormControl, Grid, MenuItem, Select } from '@mui/material';
 
 import CSS from '../../assets/css modules/weblog/Banner.module.css';
+import { Link } from 'react-router-dom';
 
 class Banner extends React.Component {
   render() {
     // const { image , name , details , teacher , time , price , oldPrice } = this.props;
-    const { name, menu, filter, number, backgrColor, textColor, ReadTime } =
-      this.props;
+    const {
+      name,
+      menu,
+      filter,
+      number,
+      backgrColor,
+      textColor,
+      ReadTime,
+      url,
+    } = this.props;
 
     return (
       <Container
@@ -38,7 +47,11 @@ class Banner extends React.Component {
             pr={5}
           >
             <h3> {name}</h3>
-            <h6> {menu}</h6>
+            <h6>
+              {/* <span>
+                <Link to={url}>{name}</Link>
+              </span> */}
+            </h6>
           </Grid>
           {/* number of elements */}
           {filter && (

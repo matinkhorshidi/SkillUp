@@ -1,6 +1,10 @@
 .tag {
+  display: inline;
   text-align: center;
-  padding: '5px 10px';
-  background-color: rgb(192, 57, 43, 0.8);
+  border-radius: 20px;
+  padding: 5px 20px;
   width: 4rem;
+  margin: 8px;
+  cursor: pointer;
+  color: black;
 }

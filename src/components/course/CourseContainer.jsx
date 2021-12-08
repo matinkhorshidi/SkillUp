@@ -62,7 +62,7 @@ class CourseContainer extends React.Component {
           >
             <OfferBox
               name={'تخفیف کورس موجود'}
-              backgrColor={'#FFB703'}
+              backgrColor={'#fff'}
               textColor={'#fff'}
             />
             <CourseInfo

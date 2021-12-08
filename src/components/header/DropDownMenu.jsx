@@ -37,8 +37,8 @@ const DropDownMenu = (props) => {
           </ListItem>
           <ListItem onClick={() => setOpenDrawer(false)}>
             <ListItemText className={CSS.Drawer}>
-              <Link className={CSS.Drawer} to="/Course">
-                کورس
+              <Link className={CSS.Drawer} to="/Courses">
+                آموزش
               </Link>
             </ListItemText>
           </ListItem>
@@ -51,7 +51,7 @@ const DropDownMenu = (props) => {
           </ListItem>
           <ListItem onClick={() => setOpenDrawer(false)}>
             <ListItemText className={CSS.Drawer}>
-              <Link className={CSS.Drawer} to="/Blog">
+              <Link className={CSS.Drawer} to="/AboutUs">
                 درباره ما
               </Link>
             </ListItemText>

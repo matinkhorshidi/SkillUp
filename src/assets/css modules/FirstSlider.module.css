@@ -2,6 +2,14 @@
   position: relative;
   height: 52.25rem;
 }
+.link {
+  color: inherit;
+  text-decoration: inherit;
+}
+.link:hover {
+  color: inherit;
+  text-decoration: inherit;
+}
 .slider > .item {
   position: absolute;
   width: 100%;
@@ -73,7 +81,7 @@
 
   direction: rtl;
   color: #fff;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding: 1rem;
 }
 .slider > .description > h1 {
@@ -130,4 +138,29 @@
 }
 .opacity1 {
   opacity: 1;
+}
+
+@media (min-width: 320px) {
+  .slider {
+    position: relative;
+    height: 70rem;
+  }
+}
+@media (min-width: 480px) {
+  .slider {
+    position: relative;
+    height: 65rem;
+  }
+}
+@media (min-width: 600px) {
+  .slider {
+    position: relative;
+    height: 60rem;
+  }
+}
+@media (min-width: 885px) {
+  .slider {
+    position: relative;
+    height: 52.25rem;
+  }
 }

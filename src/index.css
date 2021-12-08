@@ -2,10 +2,14 @@
   font-family: iran-yekan;
   src: url('./assets/fonts/iranyekanwebregular.ttf');
 }
-
+* {
+  font-family: iran-yekan;
+}
 body {
   margin: 0;
   font-family: iran-yekan;
+  overflow-x: hidden;
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -79,5 +83,26 @@ h6 {
   .css-1cet0rd-MuiGrid-root {
     position: sticky;
     top: 101px;
+  }
+}
+/* courses Filter */
+@media (min-width: 900px) {
+  .css-z2tjyn-MuiGrid-root {
+    position: sticky;
+    top: 80px;
+    overflow: auto;
+    overflow-x: hidden;
+  }
+}
+/* @media (min-width: 900px) {
+  .css-z2tjyn-MuiGrid-root {
+    position: sticky;
+    top: 101px;
+  }
+} */
+@media screen and (max-width: 768px) {
+  .css-z2tjyn-MuiGrid-root {
+    position: relative;
+    top: unset;
   }
 }

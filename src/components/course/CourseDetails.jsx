@@ -98,6 +98,7 @@ class CourseDetails extends React.Component {
               IconTag={video}
               HSize={6}
               bgColor={'#3A0CA3'}
+              svgstyle={{ stroke: 'none' }}
             ></IconWithName>
           </Grid>
           <Grid
@@ -162,11 +163,10 @@ class CourseDetails extends React.Component {
             pr={4}
           >
             <IconWithName
-              name=" قیمت دوره : مقدار ناقابل "
+              name=" قیمت دوره : 10000 تومان "
               IconTag={tag}
               HSize={5}
               iconSize={'27px'}
-              // bgColor={'#3A0CA3'}
             ></IconWithName>
           </Grid>
         </Grid>

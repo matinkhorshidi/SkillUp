@@ -13,7 +13,7 @@ class BuyCourseButton extends React.Component {
   };
 
   render() {
-    const { text, txtColor, bgColor, border, fontSize } = this.props;
+    const { text, txtColor, bgColor, border, fontSize, onClick } = this.props;
 
     const style = {
       backgroundColor: bgColor,
@@ -22,7 +22,7 @@ class BuyCourseButton extends React.Component {
       textAlign: 'center',
       height: '3rem',
       width: '90%',
-      lineHeight: '2.6rem',
+      lineHeight: '2.8rem',
       borderRadius: '4px',
       cursor: 'pointer',
       transition: '0.5s',
@@ -36,6 +36,7 @@ class BuyCourseButton extends React.Component {
         onMouseLeave={this.handleLeave}
         /* className={c.div} */
         style={style}
+        onClick={onClick}
       >
         {text}
       </div>

@@ -4,3 +4,12 @@
   -moz-box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
+.Link {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit;
+}
+.Link:hover {
+  color: blue !important;
+  /* blue colors for links too */
+  font-weight: bold;
+}

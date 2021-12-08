@@ -65,6 +65,7 @@ class Input extends React.Component {
               bgColor={iconColor}
               bgOver={iconOver || iconColor}
               cursor={cursor}
+              stroke={iconColor}
             />
           </div>
         </div>

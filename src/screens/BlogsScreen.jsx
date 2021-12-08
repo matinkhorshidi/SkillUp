@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import Blogs from '../components/weblog/Blogs';
 import Categorys from '../components/weblog/Categorys';
 import Banner from '../components/common/Banner';
+import WeblogsSlider from '../components/weblog/Slider/WeblogsSlider';
 
 class BlogsScreen extends Component {
   state = {};
@@ -10,7 +11,8 @@ class BlogsScreen extends Component {
   render() {
     return (
       <div>
-        <Categorys />
+        {/* <Categorys /> */}
+        <WeblogsSlider />
         <Banner
           name={'همه ی مطالب'}
           menu={'وبلاگ'}

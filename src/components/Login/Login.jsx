@@ -1,5 +1,8 @@
 import React from 'react';
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 import Input from './Input';
 import Button from '../common/ButtonLEO';
 import SvgIcon from '../common/SvgIcon';
@@ -38,11 +41,14 @@ class Login extends React.Component {
     const onLoginUser = async () => {
       const LogedInUser = await LoginUser(this.state.user);
       if (LogedInUser) {
+        this.props.handleToast('logedin');
         this.setState({ LogedInuser: LogedInUser });
         this.setState({ userLogedIn: true });
         this.setState({ showPopup: false });
         this.props.handlePopup();
-      } else alert('Wrong information');
+      } else {
+        this.props.handleToast('warninglog');
+      }
     };
     var AniMatestyle = {
       animation: 'shake 10s',
@@ -75,8 +81,8 @@ class Login extends React.Component {
           <div className={c.main}>
             <div className={c.right}>
               <Input
-                label="نام کاربری"
-                placeHolder="نام کاربری"
+                label="ایمیل"
+                placeHolder="example@Email.com"
                 type="text"
                 Icon={Person}
                 iconColor="#B5179E"

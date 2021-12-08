@@ -71,7 +71,7 @@ class CategoryBox extends React.Component {
           </h3>
           <p className={CSS.number} style={{ padding: numPadding }}>
             {' '}
-            تعداد مقالات : {number}
+            تعداد دوره ها : {number}
           </p>
           <SvgIcon mystyle={style} Icon={svg} size="80%"></SvgIcon>
         </div>
